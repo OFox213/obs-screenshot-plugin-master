@@ -75,7 +75,6 @@ jobs:
           ## SETUP ENVIRONMENT SCRIPT
           $CommitHash = (git rev-parse HEAD)[0..8] -join ''
           Write-Output "::set-output name=commitHash::${CommitHash}"
-
       - name: Check for GitHub Labels
         id: seekingTesters
         working-directory: ${{ github.workspace }}/plugin
@@ -89,14 +88,11 @@ jobs:
               Uri = '${{ github.event.pull_request.url }}'
               UseBasicParsing = $true
             }
-
             (Invoke-RestMethod @Params).labels.name.contains('Seeking Testers')
           } catch {
             $false
           }
-
           Write-Output "::set-output name=found::$(([string]${LabelFound}).ToLower())"
-
       - name: Build Plugin
         uses: ./plugin/.github/actions/build-plugin
         with:
@@ -149,7 +145,6 @@ jobs:
         run: |
           ## METADATA SCRIPT
           echo "::set-output name=version::${GITHUB_REF/refs\/tags\//}"
-
       - name: Download build artifacts
         uses: actions/download-artifact@v3
 
@@ -161,7 +156,6 @@ jobs:
           for file in ${{ github.workspace }}/**/@(*.pkg|*.exe|*.deb|*.zip); do
             echo "    ${file##*/}: $(sha256sum "${file}" | cut -d " " -f 1)" >> ${{ github.workspace }}/CHECKSUMS.txt
           done
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@1e07f4398721186383de40550babbdf2b84acfc5
