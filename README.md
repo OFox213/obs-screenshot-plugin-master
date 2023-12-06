@@ -1,5 +1,4 @@
 # screenshot-filter
-
 This [OBS Studio](https://obsproject.com) filter saves images of the attatched source. Images can be RGBA32 .png files or raw bytes. Images can be saved to a local file, local directory, PUT to a web server, or written to a named shared memory. The plugin can be triggered on a timer or on a hotkey.
 
 **Note for users updating from version 1.2.2 and lower**
