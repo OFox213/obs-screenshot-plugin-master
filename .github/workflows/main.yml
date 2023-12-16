@@ -31,18 +31,13 @@ jobs:
         run: sudo apt-get install -y clang-format-13
 
       - name: Run clang-format
-        run: |
-          chmod +x ./.github/scripts/check-format.sh
-          chmod +x ./.github/scripts/check-changes.sh
-          ./.github/scripts/check-format.sh && ./.github/scripts/check-changes.sh
+        run: ./.github/scripts/check-format.sh && ./.github/scripts/check-changes.sh
 
       - name: Install cmake-format
         run: sudo pip install cmakelang
 
       - name: Run cmake-format
-        run: |
-          chmod +x ./.github/scripts/check-cmake.sh
-          ./.github/scripts/check-cmake.sh
+        run: ./.github/scripts/check-cmake.sh
 
   windows_build:
     name: 02 - Windows
