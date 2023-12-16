@@ -10,6 +10,9 @@ Named Shared Memory destinations can only use timer mode, and will continue to u
 ![demo.png](https://raw.githubusercontent.com/synap5e/obs-screenshot-plugin/readme-images/demo.png) 
 ![hotkeys.png](https://raw.githubusercontent.com/synap5e/obs-screenshot-plugin/readme-images/hotkeys.png) 
 
+# With fixed something...
+I fixed permission denied problem when running github action by adding chmod command in github workflow(main.yml)
+
 ## Destinations
 
 ### Output to folder
