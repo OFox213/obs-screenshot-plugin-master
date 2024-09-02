@@ -32,8 +32,6 @@ jobs:
 
       - name: Run clang-format
         run: |
-          chmod +x ./.github/scripts/check-format.sh
-          chmod +x ./.github/scripts/check-changes.sh
           ./.github/scripts/check-format.sh && ./.github/scripts/check-changes.sh
 
       - name: Install cmake-format
@@ -41,7 +39,6 @@ jobs:
 
       - name: Run cmake-format
         run: |
-          chmod +x ./.github/scripts/check-cmake.sh
           ./.github/scripts/check-cmake.sh
 
   windows_build:
