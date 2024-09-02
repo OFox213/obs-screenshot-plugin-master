@@ -74,7 +74,7 @@ jobs:
         run: |
           ## SETUP ENVIRONMENT SCRIPT
           $CommitHash = (git rev-parse HEAD)[0..8] -join ''
-          Write-Output "::set-output name=commitHash::${CommitHash}"
+          Write-Output "name=commitHash=${CommitHash} >> $GITHUB_OUTPUT"
 
       - name: Check for GitHub Labels
         id: seekingTesters
