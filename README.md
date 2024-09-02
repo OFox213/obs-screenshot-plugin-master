@@ -1,7 +1,5 @@
-[![Plugin Build](https://github.com/OFox213/obs-screenshot-plugin-master/actions/workflows/main.yml/badge.svg)](https://github.com/OFox213/obs-screenshot-plugin-master/actions/workflows/main.yml)
+# screenshot-filter
 
-
-# screenshot-filter (with github action v2)
 This [OBS Studio](https://obsproject.com) filter saves images of the attatched source. Images can be RGBA32 .png files or raw bytes. Images can be saved to a local file, local directory, PUT to a web server, or written to a named shared memory. The plugin can be triggered on a timer or on a hotkey.
 
 **Note for users updating from version 1.2.2 and lower**
@@ -10,9 +8,6 @@ Named Shared Memory destinations can only use timer mode, and will continue to u
 
 ![demo.png](https://raw.githubusercontent.com/synap5e/obs-screenshot-plugin/readme-images/demo.png) 
 ![hotkeys.png](https://raw.githubusercontent.com/synap5e/obs-screenshot-plugin/readme-images/hotkeys.png) 
-
-# With fixed something...
-I fixed permission denied problem when running github action by adding chmod command in github workflow(main.yml)
 
 ## Destinations
 

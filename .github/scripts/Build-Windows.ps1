@@ -28,7 +28,6 @@ function Build {
     trap {
         Pop-Location -Stack BuildTemp -ErrorAction 'SilentlyContinue'
         Write-Error $_
-        Log-Group
         exit 2
     }
 
@@ -48,7 +47,7 @@ function Build {
     $ProductVersion = $BuildSpec.version
 
     $script:DepsVersion = ''
-    $script:QtVersion = '6'
+    $script:QtVersion = '5'
     $script:VisualStudioVersion = ''
     $script:PlatformSDK = '10.0.18363.657'
 
@@ -97,7 +96,6 @@ function Build {
     Invoke-External cmake --install "build_${script:Target}" --prefix "${ProjectRoot}/release" @CmakeArgs
 
     Pop-Location -Stack BuildTemp
-    Log-Group
 }
 
 Build

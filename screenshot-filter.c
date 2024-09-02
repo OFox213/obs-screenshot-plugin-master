@@ -1,5 +1,3 @@
-//GITHUB ACTION V1.0
-
 #include <windows.h>
 #include <wininet.h>
 #include <obs-module.h>
