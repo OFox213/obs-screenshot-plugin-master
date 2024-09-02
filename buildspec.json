@@ -43,7 +43,7 @@
                 "macos-x86_64": "765314996a59adc58f4feff4d6fade3df301f0475e196943510cff4d6a248313",
                 "macos-arm64": "5bcd48f9ce9d027ded6afc7f34b71f37fb99c14980d698d1bbcbf88029b4231d",
                 "macos-universal": "aca8e9888be610926abcf601718d9ec9a70ca7e5c7df102174de6572c56cee83",
-                "windows-x64": "2b14cbf46064939d56a57f952d22b80d18b2a982c8bd6a2d30044452b8e99b1a",
+                "windows-x64": "169cf5f8218fc0be51dbe7d900e8c4f95b96e7c72b915e3de0b223a0560b94f7",
                 "windows-x86": "334d08d4d59704372773c981d4f426661798bb2f4d3c5432a6f61d6368235b45"
             },
             "pdb-hashes": {
