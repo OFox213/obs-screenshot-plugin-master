@@ -74,4 +74,6 @@ runs:
           }
         }
 
+        echo "::debug::Preview build args {BuildArgs}"
+
         ${{ inputs.workingDirectory }}/.github/scripts/Build-Windows.ps1 @BuildArgs
