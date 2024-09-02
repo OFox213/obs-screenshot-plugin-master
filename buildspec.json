@@ -29,43 +29,10 @@
             "debugSymbols": {
                 "windows-x64": "fbddd1f659c360f2291911ac5709b67b6f8182e6bca519d24712e4f6fd3cc865"
             }
-        },
-        "qt5": {
-            "version": "2023-06-01",
-            "baseUrl": "https://github.com/obsproject/obs-deps/releases/download",
-            "label": "Pre-built Qt5",
-            "hashes": {
-                "macos-x86_64": "3efa1a0a49b3f009401d9dd76032c2d228f70baf725ffeb039ff98fd5d83cc3c",
-                "macos-arm64": "4b9106867d47c0b4b9130e34830c074b22e607cc3cda6788316aec2b857b0ce4",
-                "macos-universal": "7fed45bdd5b5517ad93e8919a2105330d204d44cfcf257cefea86d5927ddef45",
-                "windows-x64": "99d6af1a784bc43dfea9d5bef1e8f9db88bd4d314f2e68bae86e972c73628639",
-                "windows-x86": "266ce0708d682a577853f7cc8b4c2bb3568fc73e20296e6fbd7714ea9f6776ad"
-            },
-            "pdb-hashes": {
-                "windows-x64": "7d955aca2b2976f9e085040795f5642b3cac1f76c5534a47fe8e6c6cf351a4fb",
-                "windows-x86": "83ec785e12eb67cd1d57ec9ec91db2eb737b6a3fde09049a1aeb59260aec1a0d"
-            }
         }
     },
     "platformConfig": {
-        "macos-x86_64": {
-            "qtVersion": 6,
-            "deploymentTarget": "10.15"
-        },
-        "macos-arm64": {
-            "qtVersion": 6,
-            "deploymentTarget": "11.0"
-        },
-        "macos-universal": {
-            "qtVersion": 6,
-            "deploymentTarget": "10.15"
-        },
         "windows-x64": {
-            "qtVersion": 6,
-            "visualStudio": "Visual Studio 17 2022",
-            "platformSDK": "10.0.20348.0"
-        },
-        "windows-x86": {
             "qtVersion": 6,
             "visualStudio": "Visual Studio 17 2022",
             "platformSDK": "10.0.20348.0"
