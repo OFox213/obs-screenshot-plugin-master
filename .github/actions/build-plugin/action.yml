@@ -62,18 +62,12 @@ runs:
       if: ${{ runner.os == 'Windows' }}
       shell: pwsh
       run: |
+        Set-PSDebug -Trace 1
         $BuildArgs = @{
           Target = '${{ inputs.target }}'
           Configuration = '${{ inputs.config }}'
           CMakeGenerator = '${{ inputs.visualStudio }}'
+          Debug = $true
         }
 
-        if ( ( Test-Path env:CI ) -and ( Test-Path env:RUNNER_DEBUG ) ) {
-          $BuildArgs += @{
-            Debug = $true
-          }
-        }
-
-        echo "::debug::Preview build args {BuildArgs}"
-
-          ${{ inputs.workingDirectory }}/.github/scripts/Build-Windows.ps1 ${BuildArgs}
+        ${{ inputs.workingDirectory }}/.github/scripts/Build-Windows.ps1 @BuildArgs
