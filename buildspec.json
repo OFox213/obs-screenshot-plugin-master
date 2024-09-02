@@ -16,7 +16,7 @@
             "hashes": {
                 "macos-universal": "6faaa5737fc80087e13bd5cdff4df820359fff7bef7141a59e7170fdab8ce36f",
                 "windows-x64": "2b14cbf46064939d56a57f952d22b80d18b2a982c8bd6a2d30044452b8e99b1a",
-                "windows-x86": "334d08d4d59704372773c981d4f426661798bb2f4d3c5432a6f61d6368235b45"
+                "windows-x86": "700616e4588c166049a5bf303b300bacdca46a11f453126386dffdf80bb26e6e"
             }
         },
         "qt5": {
