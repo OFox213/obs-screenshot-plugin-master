@@ -1,4 +1,5 @@
 {
+    
     "dependencies": {
         "obs-studio": {
             "version": "30.1.2",
